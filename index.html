@@ -24,106 +24,43 @@
   gtag('config', 'G-9YGTRR3KL6');
 </script>
 </head>
-<!--<body onload="thongbaopopup()">-->
 <body>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❅</div>
+        <div class="snowflake"><img height="17px" src="https://i.imgur.com/8kTLV1P.png" alt="hoa" /></div>
+        <div class="snowflake"><img height="17px" src="https://i.imgur.com/8kTLV1P.png" alt="hoa" /></div>
+        <div class="snowflake"><img height="17px" src="https://i.imgur.com/8kTLV1P.png" alt="hoa" /></div>
+        <div class="snowflake"><img height="17px" src="https://i.imgur.com/8kTLV1P.png" alt="hoa" /></div>
+        <div class="snowflake"><img height="17px" src="https://i.imgur.com/8kTLV1P.png" alt="hoa" /></div>
+        <div class="snowflake"><img height="17px" src="https://i.imgur.com/8kTLV1P.png" alt="hoa" /></div>
+        <div class="snowflake"><img height="17px" src="https://i.imgur.com/8kTLV1P.png" alt="hoa" /></div>
+        <div class="snowflake"><img height="17px" src="https://i.imgur.com/8kTLV1P.png" alt="hoa" /></div>
+        <div class="snowflake"><img height="17px" src="https://i.imgur.com/8kTLV1P.png" alt="hoa" /></div>
     <div class="title">
         <a style="text-decoration:none;">
-            <h1>Upload Ảnh Free</h1>
+            <h1>upload ảnh miễn phí</h1>
         </a>
-        <p>Chúc một ngày tốt lành</p>
+        <p>Chúc một ngày tốt lành !</p>
     </div>
     <div class="dropzone">
         <div class="info"></div>
     </div>
-<style>
-    .tbpopup .tboverlay {
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.7);
-        z-index: 1;
-        display: none;
-    }
-    
-    .tbpopup .tbcontent {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        background: #fff;
-        max-width: 500px;
-        z-index: 2;
-        text-align: center;
-        padding: 20px;
-        box-sizing: border-box;
-        font-family: "Open Sans", sans-serif;
-        border-radius: 20px;
-        display: block;
-        position: fixed;
-        box-shadow: 0px 0px 10px #111;
-    }
-    
-    @media (max-width: 700px) {
-        .tbpopup .tbcontent {
-            width: 90%;
-        }
-    }
-    
-    .tbpopup .tbclose-btn {
-        cursor: pointer;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        width: 35px;
-        height: 35px;
-        color: #ff4444;
-        font-size: 30px;
-        font-weight: 600;
-        line-height: 35px;
-        text-align: center;
-        border-radius: 50%;
-    }
-    
-    .tbpopup.active .tboverlay {
-        display: block;
-    }
-    
-    .tbpopup.active .tbcontent {
-        transition: all 300ms ease-in-out;
-        transform: translate(-50%, -50%) scale(1);
-    }
-    
-    .tbbuttom {
-        background: #00cc00;
-        color: #fff
-    }
-</style>
-<!-- Thong bao pupup -->
-<div class="tbpopup" id="tbpopup-1">
-    <div class="tboverlay"></div>
-    <div class="tbcontent">
-        <div class="tbclose-btn" onclick="thongbaopopup()">&times;</div>
-        <div style="font-size:30px;font-weight:bold">Xin chào</div>
-        <p>Cảm ơn bạn đã ghé thăm trang web của mình, chúc bạn một ngày mới vui vẽ và tràn đầy hạnh phúc!</p>
-    </div>
-</div>
-<!-- js thong bao popup -->
 <script>
-    function thongbaopopup() {
-        document.getElementById("tbpopup-1").classList.toggle("active");
-    }
-</script>
+            //<![CDATA[
+                var url = window.location.href
+                var uri = window.location.toString()
+                var fb1 = url.substring(0, url.indexOf('?fbclid'))
+                var fb2 = url.substring(0, url.indexOf('&fbclid'))
+                var gi1 = url.substring(0, url.indexOf("?gidzl"))
+                var gi2 = url.substring(0, url.indexOf("&gidzl"))
+                var m1 = url.substring(0, url.indexOf('?m=1'))
+                var m2 = url.substring(0, url.indexOf('&m=1'))
+                if ((uri.length - fb1.length) > 0) window.history.replaceState({}, document.title, fb1)
+                if ((uri.length - fb2.length) > 0) window.history.replaceState({}, document.title, fb2)
+                if ((uri.length - gi1.length) > 0) window.history.replaceState({}, document.title, gi1)
+                if ((uri.length - gi2.length) > 0) window.history.replaceState({}, document.title, gi2)
+                if ((uri.length - m1.length) > 0) window.history.replaceState({}, document.title, m1)
+                if ((uri.length - m2.length) > 0) window.history.replaceState({}, document.title, m2)
+            //]]>
+        </script>
 </body>
 <script type="text/javascript" src="./js/imgur.js"></script>
 <script type="text/javascript" src="./js/upload.js"></script>
