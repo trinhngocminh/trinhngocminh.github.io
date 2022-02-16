@@ -19,13 +19,13 @@ var feedback = function(res) {
         var get_link = res.data.link.replace(/^http:\/\//i, 'https://');
         document.querySelector('.status').classList.add('bg-success');
         var content =
-            'Link : ' + '<br><input class="image-url" value=\"' + get_link + '\"/>' 
-             + '<img class="img" alt="Imgur-Upload" src=\"' + get_link + '\"/>';
+            'Link : ' + '<br><input class="image-url" value=\"' + get_link?rel=uploadfree.pw + '\"/>' 
+             + '<img class="img" alt="uploadfree.pw" src=\"' + get_link + '\"/>';
         addImg('.status', content);
     }
 };
 
 new Imgur({
-    clientid: '1ad74c32353a548', //You can change this ClientID
+    clientid: '1ad74c32353a548', // API ID :V
     callback: feedback
 });
