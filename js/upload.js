@@ -19,7 +19,7 @@ var feedback = function(res) {
         var get_link = res.data.link.replace(/^http:\/\//i, 'https://');
         document.querySelector('.status').classList.add('bg-success');
         var content =
-            'Link : ' + '<br><input class="image-url" value=\"' + get_link?rel=uploadfree.pw + '\"/>' 
+            'Link : ' + '<br><input class="image-url" value=\"' + get_link + '\"/>' 
              + '<img class="img" alt="uploadfree.pw" src=\"' + get_link + '\"/>';
         addImg('.status', content);
     }
